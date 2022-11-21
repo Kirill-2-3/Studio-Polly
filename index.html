@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Polly</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    
+    <div class="page">
+
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header__container">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <a class="header__logo-link" href="#">
+                            <svg class="sprites sprites--logo" viewBox="0 0 160 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.41776 17.5386C5.20097 17.5386 4.1343 17.3226 3.21776 16.8906C2.30121 16.4586 1.58221 15.8426 1.06072 15.0426C0.555043 14.2426 0.294302 13.2906 0.2785 12.1866H2.93332C2.94912 13.0826 3.25726 13.8426 3.85776 14.4666C4.45825 15.0906 5.30369 15.4026 6.39406 15.4026C7.35801 15.4026 8.10859 15.1706 8.64592 14.7066C9.19896 14.2266 9.47555 13.6186 9.47555 12.8826C9.47555 12.2906 9.34118 11.8106 9.07259 11.4426C8.8197 11.0746 8.46415 10.7706 8.00592 10.5306C7.56341 10.2906 7.04986 10.0746 6.46517 9.8826C5.88047 9.6906 5.26418 9.48263 4.61628 9.2586C3.33628 8.8266 2.37232 8.26658 1.72443 7.5786C1.09232 6.8906 0.77628 5.9866 0.77628 4.8666C0.760472 3.9226 0.973805 3.0986 1.41628 2.3946C1.87455 1.6906 2.50665 1.1466 3.31258 0.7626C4.1343 0.362597 5.09035 0.162598 6.18072 0.162598C7.25529 0.162598 8.19555 0.362597 9.00148 0.7626C9.82318 1.1626 10.4632 1.7226 10.9215 2.4426C11.3797 3.1466 11.6167 3.9706 11.6326 4.9146H8.97778C8.97778 4.4826 8.86711 4.0746 8.64592 3.6906C8.42466 3.2906 8.10074 2.9626 7.67407 2.7066C7.24739 2.4506 6.72591 2.3226 6.10961 2.3226C5.31949 2.3066 4.66369 2.5066 4.14221 2.9226C3.63652 3.3386 3.38369 3.9146 3.38369 4.6506C3.38369 5.3066 3.57332 5.8106 3.95258 6.1626C4.33183 6.5146 4.85332 6.8106 5.51702 7.0506C6.18072 7.2746 6.93924 7.53863 7.79259 7.8426C8.6143 8.11463 9.34911 8.4426 9.99704 8.8266C10.6449 9.2106 11.1585 9.7146 11.5378 10.3386C11.9328 10.9626 12.1304 11.7546 12.1304 12.7146C12.1304 13.5626 11.917 14.3546 11.4904 15.0906C11.0637 15.8106 10.4237 16.4026 9.57037 16.8666C8.71704 17.3146 7.66615 17.5386 6.41776 17.5386Z" fill="#111010"/>
+                                <path d="M18.4639 17.2506V2.5146H13.5572V0.450598H25.8594V2.5146H20.9764V17.2506H18.4639Z" fill="#111010"/>
+                                <path d="M34.4211 17.5386C33.2359 17.5386 32.1613 17.3066 31.1974 16.8426C30.2493 16.3626 29.4907 15.6346 28.9219 14.6586C28.3687 13.6826 28.0922 12.4426 28.0922 10.9386V0.450598H30.6048V10.9626C30.6048 12.4346 30.9524 13.5146 31.6478 14.2026C32.343 14.8906 33.2833 15.2346 34.4685 15.2346C35.6379 15.2346 36.5702 14.8906 37.2656 14.2026C37.9608 13.5146 38.3085 12.4346 38.3085 10.9626V0.450598H40.8211V10.9386C40.8211 12.4426 40.5287 13.6826 39.9441 14.6586C39.3752 15.6346 38.6008 16.3626 37.6211 16.8426C36.6571 17.3066 35.5904 17.5386 34.4211 17.5386Z" fill="#111010"/>
+                                <path d="M44.0441 17.2506V0.450598H49.4248C51.3685 0.450598 52.9645 0.794596 54.213 1.4826C55.4771 2.1706 56.4095 3.1466 57.01 4.4106C57.6263 5.6586 57.9344 7.1466 57.9344 8.8746C57.9344 10.5866 57.6263 12.0746 57.01 13.3386C56.4095 14.5866 55.4771 15.5546 54.213 16.2426C52.9645 16.9146 51.3685 17.2506 49.4248 17.2506H44.0441ZM46.5567 15.0906H49.33C50.8312 15.0906 52.0164 14.8426 52.8856 14.3466C53.7704 13.8506 54.4026 13.1386 54.7818 12.2106C55.1769 11.2826 55.3744 10.1706 55.3744 8.8746C55.3744 7.5786 55.1769 6.45859 54.7818 5.5146C54.4026 4.5706 53.7704 3.8506 52.8856 3.3546C52.0164 2.8426 50.8312 2.5866 49.33 2.5866H46.5567V15.0906Z" fill="#111010"/>
+                                <path d="M60.7107 17.2506V0.450598H63.2233V17.2506H60.7107Z" fill="#111010"/>
+                                <path d="M74.2467 17.5386C72.6032 17.5386 71.1652 17.1706 69.9326 16.4346C68.7 15.6986 67.736 14.6826 67.0407 13.3866C66.3454 12.0746 65.9978 10.5626 65.9978 8.8506C65.9978 7.1386 66.3454 5.6346 67.0407 4.3386C67.736 3.02659 68.7 2.0026 69.9326 1.2666C71.1652 0.530598 72.6032 0.162598 74.2467 0.162598C75.8904 0.162598 77.3282 0.530598 78.5607 1.2666C79.7933 2.0026 80.7496 3.02659 81.4289 4.3386C82.1245 5.6346 82.4719 7.1386 82.4719 8.8506C82.4719 10.5626 82.1245 12.0746 81.4289 13.3866C80.7496 14.6826 79.7933 15.6986 78.5607 16.4346C77.3282 17.1706 75.8904 17.5386 74.2467 17.5386ZM74.2467 15.2586C75.3844 15.2586 76.3719 15.0026 77.2096 14.4906C78.063 13.9786 78.7267 13.2426 79.2007 12.2826C79.6748 11.3226 79.9119 10.1786 79.9119 8.8506C79.9119 7.52258 79.6748 6.3786 79.2007 5.4186C78.7267 4.4586 78.063 3.7226 77.2096 3.2106C76.3719 2.6986 75.3844 2.4426 74.2467 2.4426C73.1089 2.4426 72.1133 2.6986 71.26 3.2106C70.4067 3.7226 69.743 4.4586 69.2689 5.4186C68.8106 6.3786 68.5815 7.52258 68.5815 8.8506C68.5815 10.1786 68.8106 11.3226 69.2689 12.2826C69.743 13.2426 70.4067 13.9786 71.26 14.4906C72.1133 15.0026 73.1089 15.2586 74.2467 15.2586Z" fill="#111010"/>
+                                <path d="M91.243 17.2506V0.450598H97.0504C98.3467 0.450598 99.4207 0.674597 100.274 1.1226C101.127 1.5546 101.76 2.1546 102.17 2.9226C102.597 3.6746 102.81 4.5306 102.81 5.4906C102.81 6.4026 102.605 7.2426 102.194 8.0106C101.799 8.76263 101.175 9.36263 100.321 9.8106C99.4682 10.2586 98.3778 10.4826 97.0504 10.4826H93.7556V17.2506H91.243ZM93.7556 8.3946H96.9319C98.117 8.3946 98.963 8.13863 99.4681 7.6266C99.9896 7.0986 100.25 6.3866 100.25 5.4906C100.25 4.5626 99.9896 3.8426 99.4681 3.3306C98.963 2.8026 98.117 2.5386 96.9319 2.5386H93.7556V8.3946Z" fill="#111010"/>
+                                <path d="M112.95 17.5386C111.307 17.5386 109.869 17.1706 108.636 16.4346C107.404 15.6986 106.44 14.6826 105.744 13.3866C105.049 12.0746 104.701 10.5626 104.701 8.8506C104.701 7.1386 105.049 5.6346 105.744 4.3386C106.44 3.0266 107.404 2.0026 108.636 1.2666C109.869 0.530598 111.307 0.162598 112.95 0.162598C114.594 0.162598 116.032 0.530598 117.264 1.2666C118.497 2.0026 119.453 3.0266 120.133 4.3386C120.828 5.6346 121.176 7.1386 121.176 8.8506C121.176 10.5626 120.828 12.0746 120.133 13.3866C119.453 14.6826 118.497 15.6986 117.264 16.4346C116.032 17.1706 114.594 17.5386 112.95 17.5386ZM112.95 15.2586C114.088 15.2586 115.076 15.0026 115.913 14.4906C116.767 13.9786 117.43 13.2426 117.904 12.2826C118.379 11.3226 118.616 10.1786 118.616 8.8506C118.616 7.52258 118.379 6.3786 117.904 5.4186C117.43 4.4586 116.767 3.7226 115.913 3.2106C115.076 2.6986 114.088 2.4426 112.95 2.4426C111.813 2.4426 110.817 2.6986 109.964 3.2106C109.11 3.7226 108.447 4.4586 107.973 5.4186C107.514 6.3786 107.285 7.52258 107.285 8.8506C107.285 10.1786 107.514 11.3226 107.973 12.2826C108.447 13.2426 109.11 13.9786 109.964 14.4906C110.817 15.0026 111.813 15.2586 112.95 15.2586Z" fill="#111010"/>
+                                <path d="M123.975 17.2506V0.450598H126.487V15.2346H134.025V17.2506H123.975Z" fill="#111010"/>
+                                <path d="M136.729 17.2506V0.450598H139.241V15.2346H146.779V17.2506H136.729Z" fill="#111010"/>
+                                <path d="M151.342 17.2506V11.0586L145.843 0.450598H148.687L152.599 8.5626L156.486 0.450598H159.307L153.855 11.0586V17.2506H151.342Z" fill="#111010"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__li">
+                                <a class="header__link" href="#">shop</a>
+                            </li>
+
+                            <li class="header__li">
+                                <a class="header__link" href="#">About</a>
+                            </li>
+
+                            <li class="header__li">
+                                <a class="header__link" href="#">journal</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__right">
+                        <a class="header__link header__link--search" href="#">search</a>
+
+                        <a class="shopping-cart" href="#">
+                            <svg class="sprites sprites--shopping-cart" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.9563 28.1755C15.9563 30.1552 14.3357 31.7604 12.3365 31.7604C10.3379 31.7604 8.71716 30.1553 8.71716 28.1755C8.71716 26.1955 10.3378 24.5903 12.3365 24.5903C14.3356 24.5903 15.9563 26.1954 15.9563 28.1755Z" fill="#111010"/>
+                                <path d="M32.3813 28.1755C32.3813 30.1552 30.7607 31.7604 28.7616 31.7604C26.7625 31.7604 25.1422 30.1553 25.1422 28.1755C25.1422 26.1955 26.7625 24.5903 28.7616 24.5903C30.7606 24.5903 32.3813 26.1954 32.3813 28.1755Z" fill="#111010"/>
+                                <path d="M34.8014 3.29365C34.6318 3.08617 34.3767 2.96553 34.1073 2.96553H14.591C14.0982 2.96553 13.6983 3.36154 13.6983 3.8498C13.6983 4.33801 14.0981 4.73405 14.591 4.73405H33.003L31.0798 13.6373C30.7071 14.7082 29.6951 15.4244 28.5483 15.4244L8.66802 15.4246L6.53119 3.04516C6.23723 1.34115 4.75693 0.104168 3.01164 0.104168H1.23542C0.742501 0.104168 0.342651 0.500169 0.342651 0.988427C0.342651 1.47669 0.742461 1.87269 1.23542 1.87269H3.01164C3.88424 1.87269 4.62462 2.49101 4.77154 3.34306L7.47937 19.0307C7.84699 21.1607 9.69749 22.7068 11.8792 22.7068H31.2951C31.788 22.7068 32.1879 22.3108 32.1879 21.8226C32.1879 21.3343 31.7881 20.9383 31.2951 20.9383H11.8792C10.5701 20.9383 9.45985 20.0108 9.23926 18.7325L8.97337 17.1924H28.5484C30.4843 17.1924 32.1894 15.9677 32.791 14.1453C32.8009 14.1159 32.8089 14.086 32.8155 14.0556L34.9804 4.03432C35.0368 3.77347 34.9712 3.50125 34.8016 3.29347L34.8014 3.29365Z" fill="#111010"/>
+                            </svg>
+                            <span class="shopping-cart__count">(0)</span>
+                        </a>
+
+                        <button class="burger">
+                            <span class="burger__span"></span>
+                        </button>
+                    </div>
+                </div><!-- /.header__inner -->
+            </div><!-- /.header__container -->
+        </header>
+
+
+        <div class="container container--intro">
+            <div class="intro">
+                <div class="intro__header">
+                    <h1 class="title">PRODUCTS WITH A STORY</h1>
+                </div>
+
+                <a class="btn btn--intro" href="#">watch our studio tour</a>
+                
+                <a class="btn btn--arrow" href="#">
+                    <img class="intro__arrow" src="img/intro/arrow.svg" alt="">
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Content -->
+        <main class="content">
+            <div class="content__block content__block--main-text">
+                <div class="container">
+                    <div class="main-text">
+                        <div class="main-text__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis ante sit amet neque tristique rutrum. Nullam a suscipit ex.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__block content__block--bestsellers">
+                <div class="container">
+                    <div class="bestsellers">
+                        <div class="bestsellers__inner">
+                            <div class="bestsellers__col-1">
+                                <h2 class="bestsellers__title">our bestsellers</h2>
+    
+                                <img class="bestsellers__arror" src="img/bestsellers/arrow.svg" alt="">
+                            </div>
+    
+                            <div class="bestsellers__col-2">
+                                <a class="bestsellers__item" href="#">
+                                    <div class="bestsellers__photo">
+                                        <img class="bestsellers__img adapt" src="img/bestsellers/img-1.jpg" alt="">
+                                    </div>
+    
+                                    <h3 class="bestsellers__name">Fruit Bowl</h3>
+                                    <div class="bestsellers__current-price">&#36; 47.24 USD</div>
+                                </a>
+
+                                <a class="bestsellers__item" href="#">
+                                    <div class="bestsellers__photo">
+                                        <img class="bestsellers__img adapt" src="img/bestsellers/img-2.jpg" alt="">
+                                    </div>
+    
+                                    <h3 class="bestsellers__name">Coffee Cup</h3>
+                                    <div class="bestsellers__last-price">&#36; 65.62 USD</div>
+                                    <div class="bestsellers__current-price">&#36; 30.50 USD</div>
+
+                                    <div class="bestsellers__sale">Sale</div>
+                                </a>
+
+                                <a class="bestsellers__item" href="#">
+                                    <div class="bestsellers__photo">
+                                        <img class="bestsellers__img adapt" src="img/bestsellers/img-3.jpg" alt="">
+                                    </div>
+    
+                                    <h3 class="bestsellers__name">Tall Vase</h3>
+                                    <div class="bestsellers__current-price">&#36; 47.24 USD</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bestsellers__more">
+                            <a class="bestsellers__more-link" href="#">see all products</a>
+                        </div>
+                    </div><!-- /.bestsellers -->
+                </div><!-- /.container -->
+            </div><!-- /.content__block--bestsellers -->
+
+
+            <div class="content__block content__block--category">
+                <div class="category">
+                    <div class="category__row-1">
+                        <div class="category__row-1__row-1">
+                            <div class="category__name">Vases</div>
+                            <div class="category__name">Mugs</div>
+                            <div class="category__name">Plates</div>
+                            <div class="category__name">Bowls</div>
+                        </div>
+
+                        <div class="category__row-1__row-2">
+                            <div class="category__name">Vases</div>
+                            <div class="category__name">Bowls</div>
+                            <div class="category__name">Plates</div>
+                            <div class="category__name">Mugs</div>
+                        </div>
+                    </div>
+
+                    <div class="category__row-2">
+                        <div class="container">
+                            <div class="category__header">
+                                <h2 class="category__title">shop by category</h2>
+                            </div>
+                            
+                            <div class="category__container">
+                                <a class="category__item" href="#">
+                                    <div class="category__photo">
+                                        <img class="category__img adapt" src="img/category/img-1.jpg" alt="">
+                                    </div>
+
+                                    <h3 class="category__item-name">Vases</h3>
+                                </a>
+
+                                <a class="category__item" href="#">
+                                    <div class="category__photo">
+                                        <img class="category__img adapt" src="img/category/img-2.jpg" alt="">
+                                    </div>
+
+                                    <h3 class="category__item-name">Cups</h3>
+                                </a>
+
+                                <a class="category__item" href="#">
+                                    <div class="category__photo">
+                                        <img class="category__img adapt" src="img/category/img-3.jpg" alt="">
+                                    </div>
+
+                                    <h3 class="category__item-name">Plates</h3>
+                                </a>
+                            </div><!-- /.category__container -->
+                        </div><!-- /.container -->
+                    </div><!-- /.category__row-2 -->
+                </div><!-- /.category -->
+            </div><!-- /.content__block--category -->
+
+
+            <div class="content__block content__block--clay-kits">
+                <div class="container container--klay-kits">
+                    <div class="clay-kits">
+                        <div class="clay-kits__col-1">
+                            <div class="clay-kits__header">
+                                <h2 class="clay-kits__title">home clay kits</h2>
+                            </div>
+
+                            <div class="clay-kits__text">
+                                <p>Lorem ipsum dolo r sit amet, consectetur adipiscing elit. Ut lobortis ante sit amet neque tristique rutrum. Nullam a suscipit ex. Donec ac efficitur mauris.</p>
+                            </div>
+
+                            <div class="clay-kits__features">
+                                <div class="clay-kits__features__item">free shipping</div>
+                                <div class="clay-kits__features__item">no need to fire</div>
+                                <div class="clay-kits__features__item">tools and clay included</div>
+                            </div>
+
+                            <a class="btn btn--clay-kits" href="#">order your kit now</a>
+                        </div>
+
+                        <div class="clay-kits__col-2">
+                            <img class="clay-kits__img adapt" src="img/clay-kits/photo.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="content__block content__block--features">
+                <div class="container">
+                    <div class="features">
+                        <div class="features__item">
+                            <div class="features__icon">
+                                <img class="features__img" src="img/features/icon.svg" alt="">
+                            </div>
+
+                            <h3 class="features__title">sustainable materials</h3>
+
+                            <div class="features__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis ante sit amet neque tristique rutrum.</p>
+                            </div>
+                        </div>
+
+                        <div class="features__item">
+                            <div class="features__icon">
+                                <img class="features__img" src="img/features/icon.svg" alt="">
+                            </div>
+
+                            <h3 class="features__title">hand made products</h3>
+
+                            <div class="features__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis ante sit amet neque tristique rutrum.</p>
+                            </div>
+                        </div>
+
+                        <div class="features__item">
+                            <div class="features__icon">
+                                <img class="features__img" src="img/features/icon.svg" alt="">
+                            </div>
+
+                            <h3 class="features__title">plastic-free packaging</h3>
+
+                            <div class="features__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis ante sit amet neque tristique rutrum.</p>
+                            </div>
+                        </div>
+
+                        <div class="features__item">
+                            <div class="features__icon">
+                                <img class="features__img" src="img/features/icon.svg" alt="">
+                            </div>
+
+                            <h3 class="features__title">free delivery on all orders</h3>
+
+                            <div class="features__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis ante sit amet neque tristique rutrum.</p>
+                            </div>
+                        </div>
+                    </div><!-- /.features -->
+                </div><!-- /.container -->
+            </div><!-- /.content__block--features -->
+
+
+            <div class="content__block content__block--reviews">
+                <div class="container container--reviews">
+                    <div class="reviews">
+                        <div class="reviews__item">
+                            <div class="reviews__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
+                            </div>
+
+                            <div class="reviews__author">
+                                <span class="reviews__name">katie</span>,
+                                <span class="reviews__name">Chicago</span>
+                            </div>
+                        </div>
+
+                        <div class="reviews__item">
+                            <div class="reviews__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
+                            </div>
+
+                            <div class="reviews__author">
+                                <span class="reviews__name">liam</span>,
+                                <span class="reviews__name">london</span>
+                            </div>
+                        </div>
+
+                        <div class="reviews__item">
+                            <div class="reviews__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
+                            </div>
+
+                            <div class="reviews__author">
+                                <span class="reviews__name">emma</span>,
+                                <span class="reviews__name">portland</span>
+                            </div>
+                        </div>
+                    </div><!-- /.reviews -->
+                </div><!-- /.container -->
+            </div><!-- /.content__block--reviews -->
+
+
+            <div class="content__block content__block--articles">
+                <div class="container">
+                    <div class="articles">
+                        <div class="articles__header">
+                            <h2 class="articles__title">latest articles</h2>
+                        </div>
+                        
+                        <div class="articles__container">
+                            <article class="article">
+                                <a class="article__link" href="#">
+                                    <div class="article__photo">
+                                        <img class="article__img adapt" src="img/articles/photo-1.jpg" alt="">
+                                    </div>
+
+                                    <div class="article__bottom">
+                                        <h3 class="article__title">10 tips for beginners</h3>
+                                    </div>
+                                </a>
+                            </article>
+
+                            <article class="article">
+                                <a class="article__link" href="#">
+                                    <div class="article__photo">
+                                        <img class="article__img adapt" src="img/articles/photo-2.jpg" alt="">
+                                    </div>
+
+                                    <div class="article__bottom">
+                                        <h3 class="article__title">2022 pottery trends</h3>
+                                    </div>
+                                </a>
+                            </article>
+
+                            <article class="article">
+                                <a class="article__link" href="#">
+                                    <div class="article__photo">
+                                        <img class="article__img adapt" src="img/articles/photo-3.jpg" alt="">
+                                    </div>
+
+                                    <div class="article__bottom">
+                                        <h3 class="article__title">How to start your brand</h3>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                    </div><!-- /.articles -->
+                </div><!-- /.container -->
+            </div><!-- /.content__block--features -->
+
+
+            <div class="content__block content__block--subscription">
+                <div class="container">
+                    <div class="subscription">
+                        <div class="subscription__col-1">
+                            <div class="semicircle">
+                                <img class="semicircle__img adapt" src="img/semicircle/semicircle.png" alt="">
+                            </div>
+                        </div>
+
+                        <hr class="subscription__hr">
+
+                        <div class="subscription__col-2">
+                            <h3 class="subscription__title">keep in touch</h3>
+
+                            <div class="subscription__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+
+                            <form class="subscription__form" action="/" method="post">
+                                <input class="subscription__input" type="text" placeholder="Enter your email">
+                                <button class="btn btn--subscription" type="submit">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__block content__block--behind-scenes">
+                <div class="container">
+                    <div class="behind-scenes">
+                        <div class="behind-scenes__header">
+                            <h3 class="behind-scenes__title">behind the scenes</h3>
+                            <div class="behind-scenes__follow">
+                                <a class="behind-scenes__follow-link" href="#">follow us on instagram</a>
+                            </div>
+                        </div>
+
+                        <div class="behind-scenes__inner">
+                            <div class="behind-scenes__item behind-scenes__item--odd">
+                                <a class="behind-scenes__link" href="#">
+                                    <img class="behind-scenes__img" src="img/behind-scenes/img-1.jpg" alt="">
+                                </a>
+                            </div>
+                           
+                            <div class="behind-scenes__item behind-scenes__item--even">
+                                <a class="behind-scenes__link" href="#">
+                                    <img class="behind-scenes__img" src="img/behind-scenes/img-2.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="behind-scenes__item behind-scenes__item--odd">
+                                <a class="behind-scenes__link" href="#">
+                                    <img class="behind-scenes__img" src="img/behind-scenes/img-3.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="behind-scenes__item behind-scenes__item--even">
+                                <a class="behind-scenes__link" href="#">
+                                    <img class="behind-scenes__img" src="img/behind-scenes/img-4.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <div class="behind-scenes__item behind-scenes__item--odd">
+                                <a class="behind-scenes__link" href="#">
+                                    <img class="behind-scenes__img" src="img/behind-scenes/img-5.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div><!-- /.behind-scenes -->
+                </div><!-- /.container -->
+            </div><!-- /.content__block--behind-scenes -->
+        </main>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__header">
+                    <img class="footer__logo adapt" src="img/footer/logo.svg">
+                </div>
+
+                <div class="footer__content">
+                    <div class="footer__col-1">
+                        <div class="subscription subscription--footer">
+                            <h3 class="subscription__title subscription__title--footer">Subscribe and get 10% off your first order.</h3>
+    
+                            <form class="subscription__form subscription__form--footer" action="/" method="post">
+                                <input class="subscription__input" type="text" placeholder="Enter your email">
+                                <button class="btn btn--subscription" type="submit">Send</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="footer__col-2">
+                        <nav class="footer__nav">
+                            <ul class="footer__nav-col-1 footer__nav-col">
+                                <li class="footer__li">
+                                    <a class="footer__link" href="#">home</a>
+                                </li>
+
+                                <li class="footer__li">
+                                    <a class="footer__link" href="#">shop</a>
+                                </li>
+
+                                <li class="footer__li">
+                                    <a class="footer__link" href="#">Journal</a>
+                                </li>
+
+                                <li class="footer__li">
+                                    <a class="footer__link" href="#">Contact</a>
+                                </li>
+                            </ul>
+
+                            <ul class="footer__nav-col-2 footer__nav-col">
+                                <li class="footer__li">
+                                    <a class="footer__link" href="#">about</a>
+                                </li>
+
+                                <li class="footer__li">
+                                    <a class="footer__link" href="#">Terms and Conditions</a>
+                                </li>
+
+                                <li class="footer__li">
+                                    <a class="footer__link" href="#">Privacy policy</a>
+                                </li>
+                            </ul>
+
+                            <ul class="footer__nav-col-3 footer__nav-col">
+                                <li class="footer__li">
+                                    <a class="footer__link" href="#">Style guide</a>
+                                </li>
+
+                                <li class="footer__li">
+                                    <a class="footer__link" href="#">Licensing</a>
+                                </li>
+
+                                <li class="footer__li">
+                                    <a class="footer__link" href="#">Changelog</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div><!-- /.footer__col-2 -->
+                </div><!-- /.footer__inner -->
+
+                <div class="footer__footer">
+                    <div class="socials">
+                        <a class="socials__link" href="#">
+                            <svg class="sprites sprites--socials sprites--facebook" viewBox="0 0 24 24">
+                                <path d="M19.4688 3.96018H23.8176V0.168178C21.7136 0.0525061 19.5983 -0.00358346 17.4816 0.000177236C11.2128 0.000177236 6.9216 1.97178 6.9216 5.59578V8.93058H0V13.1629H6.9192V23.8141H15.4008V13.1641H22.0392L23.0928 8.93178H15.3984V6.01578C15.4008 4.79178 16.0584 3.96018 19.4688 3.96018Z" fill="#111010"/>
+                            </svg>
+                        </a>
+
+                        <a class="socials__link" href="#">
+                            <svg class="sprites sprites--socials sprites--twitter" viewBox="0 0 24 24">
+                                <path d="M24 2.82004C23.0967 3.3014 22.1415 3.62113 21.1636 3.76937C22.1938 3.02305 22.9643 1.84085 23.3291 0.446708C22.3646 1.14592 21.3094 1.63836 20.2091 1.9027C19.5344 1.02315 18.6588 0.411817 17.6962 0.148073C16.7336 -0.115671 15.7284 -0.0196465 14.8109 0.423681C13.8936 0.867009 13.1064 1.63717 12.5517 2.63417C11.9969 3.63118 11.7002 4.80898 11.7 6.0147C11.6945 6.47558 11.7311 6.93576 11.8091 7.3867C9.85223 7.26853 7.9378 6.64702 6.19089 5.56281C4.44397 4.47858 2.90389 2.95606 1.67127 1.09471C1.03795 2.41765 0.841756 3.9862 1.12276 5.47997C1.40378 6.97374 2.1408 8.28004 3.18327 9.13204C2.40435 9.10682 1.64183 8.85302 0.96 8.39204V8.45737C0.961313 9.84616 1.35407 11.192 2.07215 12.2683C2.79023 13.3446 3.78979 14.0857 4.90255 14.3668C4.48148 14.5026 4.04749 14.5694 3.612 14.5654C3.29933 14.5722 2.98699 14.5377 2.68036 14.4628C2.99828 15.6561 3.61105 16.6998 4.43432 17.4501C5.25758 18.2004 6.25087 18.6202 7.27745 18.6521C5.53588 20.3168 3.38803 21.22 1.17709 21.2174C0.783662 21.2201 0.390493 21.1921 0 21.1334C2.24991 22.9052 4.87154 23.8425 7.548 23.8321C9.39036 23.8478 11.2169 23.416 12.9216 22.5617C14.6263 21.7073 16.175 20.4476 17.4779 18.8554C18.7809 17.2633 19.812 15.3708 20.5114 13.2874C21.2108 11.2042 21.5644 8.97181 21.552 6.72004C21.552 6.45337 21.5444 6.19737 21.5335 5.9427C22.5041 5.09372 23.34 4.03552 24 2.82004Z" fill="#111010"/>
+                            </svg>
+                        </a>
+
+                        <a class="socials__link" href="#">
+                            <svg class="sprites sprites--socials sprites--instagram" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 0H16.5C18.4891 0.000289251 20.3965 0.790559 21.803 2.19701C23.2094 3.60348 23.9997 5.51097 24 7.5V16.5C23.9997 18.4891 23.2094 20.3965 21.803 21.803C20.3965 23.2094 18.4891 23.9997 16.5 24H7.5C5.51097 23.9997 3.60348 23.2094 2.19701 21.803C0.790559 20.3965 0.000289251 18.4891 0 16.5V7.5C0.000289251 5.51097 0.790559 3.60348 2.19701 2.19701C3.60348 0.790559 5.51097 0.000289251 7.5 0ZM16.5 21.7505C17.8919 21.7491 19.2264 21.1956 20.2107 20.2115C21.1951 19.2274 21.7488 17.893 21.7505 16.5011V7.5C21.7488 6.10829 21.1952 4.77408 20.2111 3.78999C19.2271 2.80589 17.8928 2.25228 16.5011 2.25055H7.5C6.10829 2.25228 4.77408 2.80589 3.78999 3.78999C2.80589 4.77408 2.25228 6.10829 2.25055 7.5V16.5C2.25199 17.8921 2.80563 19.2267 3.78999 20.2111C4.77434 21.1955 6.109 21.7491 7.50109 21.7505H16.5Z" fill="#111010"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6 12C6 10.8133 6.35189 9.65328 7.01119 8.66659C7.67047 7.67989 8.60755 6.91086 9.7039 6.45673C10.8003 6.0026 12.0067 5.88378 13.1705 6.11529C14.3344 6.3468 15.4035 6.91825 16.2427 7.75737C17.0818 8.59648 17.6532 9.66558 17.8847 10.8295C18.1162 11.9933 17.9974 13.1998 17.5432 14.2961C17.0892 15.3925 16.3201 16.3295 15.3334 16.9888C14.3468 17.6481 13.1867 18 12 18C10.4087 18 8.88257 17.3678 7.75736 16.2427C6.63214 15.1174 6 13.5913 6 12ZM8.25055 12C8.25033 12.7419 8.47013 13.4672 8.88217 14.0841C9.29421 14.7011 9.87995 15.182 10.5653 15.4659C11.2507 15.7499 12.0049 15.8243 12.7325 15.6796C13.4602 15.535 14.1286 15.1777 14.6531 14.6531C15.1777 14.1286 15.535 13.4602 15.6796 12.7325C15.8243 12.0049 15.7499 11.2507 15.4659 10.5653C15.182 9.87995 14.7011 9.29421 14.0841 8.88217C13.4672 8.47015 12.7419 8.25033 12 8.25055C11.0061 8.252 10.0532 8.64749 9.35032 9.35034C8.64748 10.0532 8.25199 11.0061 8.25055 12Z" fill="#111010"/>
+                                <path d="M18.4497 6.34879C18.6078 6.34879 18.7624 6.30189 18.8939 6.21402C19.0254 6.12616 19.1279 6.00127 19.1884 5.85515C19.249 5.70904 19.2648 5.54826 19.2339 5.39314C19.203 5.23804 19.1269 5.09555 19.0151 4.98372C18.9033 4.87188 18.7608 4.79573 18.6057 4.76488C18.4505 4.73403 18.2897 4.74985 18.1437 4.81038C17.9976 4.8709 17.8727 4.97339 17.7848 5.10489C17.6969 5.23639 17.65 5.39099 17.65 5.54915C17.65 5.76123 17.7342 5.96461 17.8842 6.11458C18.0342 6.26454 18.2376 6.34879 18.4497 6.34879Z" fill="#111010"/>
+                            </svg>
+                        </a>
+                    </div><!-- /.socials -->
+                </div><!-- /.footer__footer -->
+            </div><!-- /.container -->
+        </footer>
+
+    </div>
+
+</body>
+</html>
