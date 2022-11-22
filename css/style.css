@@ -1087,6 +1087,29 @@ img.adapt {
 }
 
 
+/* Keyframes */
+
+@keyframes translateX {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    100% {
+        transform: translateX(150px) translateY(0);
+    }
+    
+}
+
+@keyframes translateXReverse {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+
+    100% {
+        transform: translateX(-150px) translateY(0);
+    }
+}
+
 
 /* Media */
 
@@ -1832,6 +1855,20 @@ img.adapt {
 
     .category__row-1__row-1 {
         margin-bottom: 40px;
+
+        animation-name: translateX;
+        animation-timing-function: linear;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    .category__row-1__row-2 {
+        animation-name: translateXReverse;
+        animation-timing-function: linear;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
     }
 
     .category__row-1 {
@@ -1851,6 +1888,8 @@ img.adapt {
     .category__title {
         font-size: 30px;
     }
+
+
 
     /* Content */
 
