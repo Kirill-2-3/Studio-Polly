@@ -1029,10 +1029,11 @@ img.adapt {
 
 .burger {
     display: none;
-    width: 40px;
+    width: 45px;
 
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 .burger__span {
@@ -1460,6 +1461,7 @@ img.adapt {
 
     .burger {
         display: block;
+        padding: 10px;
         margin-left: 15px;
     }
 
@@ -2017,7 +2019,7 @@ img.adapt {
     /* Burger */
 
 .burger {
-    width: 35px;
+    width: 40px;
     margin-left: 10px;
 }
 
